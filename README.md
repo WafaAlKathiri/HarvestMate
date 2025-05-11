@@ -6,4 +6,4 @@ Robotics and Artificial intelligence are becoming substantial tools in shaping t
 
 The images below presents the hardware setup of the project : 
 
-![Hardware Desgin](image-url)
+![Hardware Desgin](imagesREADME/hw.png)
