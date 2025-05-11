@@ -31,7 +31,7 @@ The Motion Control Package subscribes to the ReachablePoints topic. When it rece
 The Communication Package subscribes to the ServoMotorAngles topic. Upon receipt, it sends the first set of servo motor angles to the Arduino. After a pause—allowing time for the robotic arm to pick the fruit—it publishes to the CaptureFrame topic, prompting the camera to capture another frame for detection and classification. If a fruit is detected, the Classification 
 Package compares the new classification with the previous one to correct any misclassifications, then publishes the updated label to the VerifiedResult topic. If no fruit is detected, it publishes "no" to the VerifiedResult topic. The Communication Package, upon receiving data from the VerifiedResult topic, sends the appropriate servo motor angles to the Arduino: angles for the ripe box if a ripe fruit is detected, angles for the rotten box if a rotten fruit is detected, or repeats the same angles if "no" is received, to attempt picking the fruit again. If "no" is received again, the process moves to the next point. 
 
-In the link below, you will find a video demonstration of the functional project prototype along with a project report (sorry in advance for its length) and an instruction manual. Note : Ubunto was the development enviroment used to create, test and run the project. 
+In the link below, you will find a video demonstration of the functional project prototype along with a project report (sorry in advance for its length) and an instruction manual. Note : Ubuntu was the development enviroment used to create, test and run the project. 
 
 link : https://drive.google.com/drive/folders/1rMX1rLwzlKUX_WVr6sMDNVnA29rb6AzY?usp=sharing 
 
