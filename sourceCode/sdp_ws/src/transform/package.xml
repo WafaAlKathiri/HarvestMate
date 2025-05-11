@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>transform</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="sdp19@todo.todo">sdp19</maintainer>
+  <license>TODO: License declaration</license>
+  
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>transformations</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>threading</depend>
+  <depend>pika</depend>
+  <depend>json</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_ros_py</exec_depend>
+  <exec_depend>custom_msgs</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
